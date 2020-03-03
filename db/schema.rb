@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_03_02_175103) do
+ActiveRecord::Schema.define(version: 2020_03_03_220341) do
 
   create_table "cases", force: :cascade do |t|
     t.string "title"
@@ -28,6 +28,7 @@ ActiveRecord::Schema.define(version: 2020_03_02_175103) do
     t.integer "case_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.text "alert"
     t.index ["case_id"], name: "index_options_on_case_id"
   end
 
