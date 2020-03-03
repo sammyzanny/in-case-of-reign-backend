@@ -12,6 +12,12 @@ class CasesController < ApplicationController
         render json: CaseSerializer.new(new_case)
     end
 
+    def destroy
+        new_case = Case.find_by(id: params[:id])
+        new_case.destroy
+        render json: {}
+    end
+
     private
     def option_params
         params.permit(:description1, :points1, :description2, :points2)
