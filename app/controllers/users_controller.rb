@@ -2,6 +2,7 @@ class UsersController < ApplicationController
     def create
         user = User.find_or_create_by(name: params[:name])
         user.title = params[:title]
+        user.save
         render json: UserSerializer.new(user)
     end
 
@@ -27,6 +28,6 @@ class UsersController < ApplicationController
     private
 
     def user_params
-        params.require(:user).permit(:name, :title, :rating)
+        params.permit(:name, :title, :rating)
     end
 end
