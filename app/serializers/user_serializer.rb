@@ -1,8 +1,8 @@
 class UserSerializer
   include FastJsonapi::ObjectSerializer
-  attributes :name, :title, :rating, :rulings
+  attributes :name, :title, :rating, :creations
 
-  def rulings
-    @object.rulings
+  def cases
+    @object.creations
   end
 end
