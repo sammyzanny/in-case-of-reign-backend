@@ -1,4 +1,4 @@
 class OptionSerializer
   include FastJsonapi::ObjectSerializer
-  attributes :points, :description
+  attributes :points, :description, :alert
 end

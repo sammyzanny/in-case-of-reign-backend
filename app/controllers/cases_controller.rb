@@ -7,8 +7,7 @@ class CasesController < ApplicationController
 
     def create
         new_case = Case.create(title: params[:title], disclosure: params[:disclosure], rating_boost: params[:rating_boost].to_i, creator_id: params[:creator_id].to_i);
-        Option.create(description: params[:description1], points: params[:points1].to_i, case_id: new_case.id)
-        Option.create(description: params[:description2], points: params[:points2].to_i, case_id: new_case.id)
+        params[:descriptions].each_with_index{|desc, i| Option.create(description: params[:descriptions][i], points: params[:all_points][i].to_i, alert: params[:alerts][i], case_id: new_case.id)}
         render json: CaseSerializer.new(new_case)
     end
 
