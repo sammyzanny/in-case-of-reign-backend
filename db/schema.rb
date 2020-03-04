@@ -10,7 +10,22 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_03_03_220341) do
+ActiveRecord::Schema.define(version: 2020_03_04_162310) do
+
+  create_table "bundles", force: :cascade do |t|
+    t.string "theme"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "bundlors", force: :cascade do |t|
+    t.integer "case_id", null: false
+    t.integer "bundle_id", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["bundle_id"], name: "index_bundlors_on_bundle_id"
+    t.index ["case_id"], name: "index_bundlors_on_case_id"
+  end
 
   create_table "cases", force: :cascade do |t|
     t.string "title"
@@ -50,4 +65,6 @@ ActiveRecord::Schema.define(version: 2020_03_03_220341) do
     t.datetime "updated_at", precision: 6, null: false
   end
 
+  add_foreign_key "bundlors", "bundles"
+  add_foreign_key "bundlors", "cases"
 end
