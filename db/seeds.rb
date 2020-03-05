@@ -52,7 +52,7 @@ option7b = Option.create(points: -16, description: "Absolutely not, don't want t
 ruling1 = Ruling.create(user_id: user1.id, case_id: case1.id, verdict: option1a.id)
 ruling2 = Ruling.create(user_id: user1.id, case_id: case2.id, verdict: option2a.id)
 
-bundle1 = Bundle.create(theme: "Default(Medieval)")
+bundle1 = Bundle.create(theme: "Default (Medieval)")
 bundle2 = Bundle.create(theme: "Sample")
 Case.all.each{|cas| Bundlor.create(case_id: cas.id, bundle_id: bundle1.id)}
 Bundlor.create(case_id: case1.id, bundle_id: bundle2.id)
