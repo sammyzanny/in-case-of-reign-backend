@@ -57,8 +57,8 @@ Case.all.each{|cas| Bundlor.create(case_id: cas.id, bundle_id: bundle1.id)}
 case8 = Case.create(title: "Sacrifice I", rating_boost: 10, disclosure: "Tacos or Pizza. Choose Now or Regret it Later", creator_id: user1.id, picture: "assets/case_pictures/goat-animal-horns.jpeg")
 case9 = Case.create(title: "Sacrifice II", rating_boost: 10, disclosure: "Alcohol or Marijuana. Choose Now or Regret it Later", creator_id: user1.id, picture: "assets/case_pictures/baphomet-demon-goat-head-hand-drawn-print-vector-26120440.jpg")
 case10 = Case.create(title: "Sacrifice III", rating_boost: 10, disclosure: "A Finger or a Toe. Choose Now or Regret it Later", creator_id: user1.id, picture: "assets/case_pictures/wing-demon.jpg")
-case11 = Case.create(title: "Sacrifice IV", rating_boost: 10, disclosure: "Duke Green or Derick Castillo. Choose Now or Regret it Later", creator_id: user1.id, picture: "assets/case_pictures/demonicImage.jpeg")
-case12 = Case.create(title: "Sacrifice V", rating_boost: 10, disclosure: "Nick Moore or Raza Jafri. Choose Now or Regret it Later", creator_id: user1.id, picture: "assets/case_pictures/demon-circle.jpg")
+case11 = Case.create(title: "Sacrifice IV", rating_boost: 10, disclosure: "Summer or Music. Choose Now or Regret it Later", creator_id: user1.id, picture: "assets/case_pictures/demonicImage.jpeg")
+case12 = Case.create(title: "Sacrifice V", rating_boost: 10, disclosure: "A Baby or a Puppy. Choose Now or Regret it Later", creator_id: user1.id, picture: "assets/case_pictures/demon-circle.jpg")
 case13 = Case.create(title: "Final Sacrifice", rating_boost: 10, disclosure: "Mathew Gizzi or Samuel Zandi. Regret is No Longer an Option.", creator_id: user1.id, picture: "assets/case_pictures/final-sacrifice.jpg")
 
 
@@ -77,14 +77,14 @@ option10b = Option.create(points: 0, description: "Sacrifice Finger", case_id: c
 option10c = Option.create(points: -30, description: "I am Too Weak to Choose", case_id: case10.id, alert: "The Dark Lord is Displeased. You WILL Regret Your Decision")
 
 
-option11a = Option.create(points: 0, description: "Sacrifice Duke", case_id: case11.id, alert: "The Dark Lord is Pleased")
-option11b = Option.create(points: 0, description: "Sacrifice Derick", case_id: case11.id, alert: "The Dark Lord is Pleased")
+option11a = Option.create(points: 0, description: "Sacrifice Summer", case_id: case11.id, alert: "The Dark Lord is Pleased")
+option11b = Option.create(points: 0, description: "Sacrifice Music", case_id: case11.id, alert: "The Dark Lord is Pleased")
 option11c = Option.create(points: -30, description: "I am Too Weak to Choose", case_id: case11.id, alert: "The Dark Lord is Displeased. You WILL Regret Your Decision")
 
 
-option12a = Option.create(points: 0, description: "Sacrifice Nick", case_id: case12.id, alert: "The Dark Lord is Pleased")
-option12b = Option.create(points: 0, description: "Sacrifice Raza", case_id: case12.id, alert: "The Dark Lord is Pleased")
-option12c = Option.create(points: -25, description: "I am Too Weak to Choose", case_id: case12.id, alert: "The Dark Lord is Displeased. You WILL Regret Your Decision")
+option12a = Option.create(points: 0, description: "Sacrifice Baby", case_id: case12.id, alert: "The Dark Lord is Pleased")
+option12b = Option.create(points: 0, description: "Sacrifice Dog", case_id: case12.id, alert: "The Dark Lord is Pleased")
+option12c = Option.create(points: -25, description: "I am Too Weak to Choose", case_id: case12.id, alert: "The Dark Lord is Displeased. ")
 
 
 option13a = Option.create(points: 0, description: "Sacrifice Sam", case_id: case13.id, alert: "Your Decision Did Not Matter, We Are Both the Dark Lord")
