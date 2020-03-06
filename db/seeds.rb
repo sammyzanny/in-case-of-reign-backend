@@ -83,8 +83,8 @@ option11c = Option.create(points: -30, description: "I am Too Weak to Choose", c
 
 
 option12a = Option.create(points: 0, description: "Sacrifice Baby", case_id: case12.id, alert: "The Dark Lord is Pleased")
-option12b = Option.create(points: 0, description: "Sacrifice Dog", case_id: case12.id, alert: "The Dark Lord is Pleased")
-option12c = Option.create(points: -25, description: "I am Too Weak to Choose", case_id: case12.id, alert: "The Dark Lord is Displeased. ")
+option12b = Option.create(points: 0, description: "Sacrifice Puppy", case_id: case12.id, alert: "The Dark Lord is Pleased")
+option12c = Option.create(points: -25, description: "I am Too Weak to Choose", case_id: case12.id, alert: "The Dark Lord is Displeased. So he Killed them Both.")
 
 
 option13a = Option.create(points: 0, description: "Sacrifice Sam", case_id: case13.id, alert: "Your Decision Did Not Matter, We Are Both the Dark Lord")
